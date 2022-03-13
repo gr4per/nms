@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c7b64dbde987426d9358cf2307433dfa }}/gr4per/nms:${{ github.sha }}
+        tags: gr4per/nms:${{ github.sha }}
         file: ./Dockerfile
 
   deploy:
