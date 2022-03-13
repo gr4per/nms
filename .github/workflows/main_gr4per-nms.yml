@@ -48,4 +48,4 @@ jobs:
         app-name: 'gr4per-nms'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_ebadbd30ff78477dbc099a0fdcbec9e0 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_c7b64dbde987426d9358cf2307433dfa }}/gr4per/nms:${{ github.sha }}'
+        images: 'gr4per/nms:${{ github.sha }}'
