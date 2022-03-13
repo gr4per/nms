@@ -7,3 +7,9 @@ WebSocket server that relies on following other services
 * Azure Storage used to permanently store the streamed measurements into block blobs (1 per hour) as CSV data, tab separated
 
 It drives client SPAs called NMC that prime the data window from the storage directly but also connect to NMS via websocket to get pushes for new data with lowest possible latency.
+
+## CI/CD
+
+Create app service in azure, set to B1 linux plan
+
+
