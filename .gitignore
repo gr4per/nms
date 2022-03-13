@@ -4,3 +4,4 @@ package-lock.json
 .deployment
 .vscode
 creds.json
+*.swp
