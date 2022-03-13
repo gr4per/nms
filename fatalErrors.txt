@@ -1,0 +1,57 @@
+Loggly Error: Error: getaddrinfo ENOTFOUND logs-01.loggly.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'logs-01.loggly.com'
+}
+Loggly Error: Error: getaddrinfo ENOTFOUND logs-01.loggly.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'logs-01.loggly.com'
+}
+Loggly Error: Error: getaddrinfo EAI_AGAIN logs-01.loggly.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'logs-01.loggly.com'
+}
+Loggly Error: Error: getaddrinfo EAI_AGAIN logs-01.loggly.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'logs-01.loggly.com'
+}
+Loggly Error: Error: getaddrinfo EAI_AGAIN logs-01.loggly.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26) {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'logs-01.loggly.com'
+}
+node:events:498
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: getaddrinfo EAI_AGAIN logs-01.loggly.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+Emitted 'error' event on DerivedLogger instance at:
+    at DerivedLogger.transportEvent (D:\git\nms\node_modules\winston\lib\winston\logger.js:639:12)
+    at exports.Loggly.emit (node:events:532:35)
+    at errorOrDestroy (D:\git\nms\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at onwriteError (D:\git\nms\node_modules\readable-stream\lib\_stream_writable.js:430:5)
+    at onwrite (D:\git\nms\node_modules\readable-stream\lib\_stream_writable.js:450:11)
+    at WritableState.onwrite (D:\git\nms\node_modules\readable-stream\lib\_stream_writable.js:160:5)
+    at logged (D:\git\nms\node_modules\winston-loggly-bulk\lib\winston-loggly.js:151:17)
+    at onError (D:\git\nms\node_modules\node-loggly-bulk\lib\loggly\common.js:143:23)
+    at Request._callback (D:\git\nms\node_modules\node-loggly-bulk\lib\loggly\common.js:197:20)
+    at self.callback (D:\git\nms\node_modules\request\request.js:185:22) {
+  errno: -3001,
+  code: 'EAI_AGAIN',
+  syscall: 'getaddrinfo',
+  hostname: 'logs-01.loggly.com'
+}
