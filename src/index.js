@@ -75,7 +75,13 @@ async function exitGracefully(signal) {
   process.exit(0);
 }
 
-let nmCreds = require("./../creds.json");
+let nmCreds = null
+try {
+  nmCreds = require("./../creds.json");
+}
+catch(e) {
+  console.log("./../creds.json not found, trying to get from env...");
+}
 if(!nmCreds){
   nmCreds = process.env.creds; // object mapping nmId to {pass:...., token:....}
   if(nmCreds) {
