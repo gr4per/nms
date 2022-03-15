@@ -395,6 +395,7 @@ server.on('upgrade', (request, socket, head) => {
             logInfo("existing connection isAlive!");
           }
           nmConnection = pcc[0];
+          nmConnection.socket = socket;
         }
         else if(pcc.length == 0) {
           nmConnection = {id:getNMConnectionId(), socket:socket,status:"joining",statusTime:new Date(), isAlive:true, nmdId:nmdId, mode:"source"};
